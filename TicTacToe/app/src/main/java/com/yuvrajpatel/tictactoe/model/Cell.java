@@ -1,5 +1,7 @@
 package com.yuvrajpatel.tictactoe.model;
 
+import static com.yuvrajpatel.tictactoe.utilities.StringUtilities.isNullOrEmpty;
+
 public class Cell {
 
     public Player player;
@@ -9,10 +11,6 @@ public class Cell {
     }
 
     public boolean isEmpty() {
-        if(player == null){
-            return true;
-        } else {
-            return false;
-        }
+        return player == null || isNullOrEmpty(player.value);
     }
 }
