@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text Size  -->
+    <dimen name = "textsize_large">20sp</dimen>
+    <dimen name = "textsize_medium">16sp</dimen>
+    <dimen name = "textsize_small">12sp</dimen>
+
+
+     <!-- Margin -->
+    <dimen name = "margin_xxsmall">2dp</dimen>
+    <dimen name = "margin_xsmall">3dp</dimen>
+    <dimen name = "margin_small">4dp</dimen>
+    <dimen name = "margin_medium">8dp</dimen>
+    <dimen name = "margin_large">12dp</dimen>
+    <dimen name = "margin_xlarge">16dp</dimen>
+
+</resources>
