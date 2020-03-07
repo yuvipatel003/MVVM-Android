@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_StartNewGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_start_new_game"
+        android:textAlignment="center"
+        android:textSize="@dimen/textsize_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin_xxsmall"
+        android:layout_marginBottom="@dimen/margin_xxsmall"
+        android:layout_marginStart="@dimen/margin_xxsmall"
+        android:layout_marginEnd="@dimen/margin_xxsmall"/>
+
+        <EditText
+            android:id="@+id/edit_PlayerOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:ems="10"
+            android:hint="@string/str_player1"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/textsize_medium"/>
+
+        <EditText
+            android:id="@+id/edit_PlayerTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:hint="@string/str_player2"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/textsize_medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_xxsmall">
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/str_cancel"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_xxsmall"
+            android:textSize="@dimen/textsize_medium"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_Start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/str_start"
+            android:layout_marginLeft="@dimen/margin_xxsmall"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:textSize="@dimen/textsize_medium"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</LinearLayout>
