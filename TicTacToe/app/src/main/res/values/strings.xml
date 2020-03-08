@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">TicTacToe</string>
     <string name="str_player1">Player 1</string>
-    <string name="str_player2">Player 1</string>
+    <string name="str_player2">Player 2</string>
     <string name="str_start_new_game">Start New Game</string>
     <string name="str_cancel">Cancel</string>
     <string name="str_start">Start</string>
