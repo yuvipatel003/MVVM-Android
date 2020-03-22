@@ -6,6 +6,7 @@ import com.yuvrajpatel.tictactoe.model.Cell;
 import com.yuvrajpatel.tictactoe.model.Game;
 import com.yuvrajpatel.tictactoe.model.Player;
 
+import androidx.databinding.ObservableArrayMap;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 
@@ -13,12 +14,12 @@ import static com.yuvrajpatel.tictactoe.utilities.StringUtilities.stringFromNumb
 
 public class GameViewModel extends ViewModel {
 
-    public ArrayMap<String, String> cells;
+    public ObservableArrayMap<String, String> cells;
     private Game mGame;
 
     public void init(String player1, String player2) {
         mGame = new Game(player1, player2);
-        cells = new ArrayMap<>();
+        cells = new ObservableArrayMap<>();
     }
 
     public void onClickedCellAt(int row, int column) {
